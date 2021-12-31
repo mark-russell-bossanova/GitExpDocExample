@@ -22,6 +22,7 @@ pipeline:
                                     image: <+input>
                                     command: echo "hello world"
                                     privileged: false
+                                failureStrategies: []
                   serviceDependencies: []
                   infrastructure:
                       type: KubernetesDirect
